@@ -1,0 +1,22 @@
+@mixin blue-btn {
+    border-radius: 5px;
+    background-color: $primary-btn-color;
+    color: black;
+    margin: 2px;
+    padding: 1em;
+    font-size: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        background-color: darken($primary_btn_color, 7%);
+        cursor: pointer;
+    }
+}
+
+@mixin title {
+    text-align: center;
+    background-color: lightblue;
+    padding: 1em;
+    
+}

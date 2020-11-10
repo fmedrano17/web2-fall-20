@@ -1,0 +1,39 @@
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/typography';
+@import './partials/mixins';
+
+nav {
+    ul {
+        padding: 10px;
+        li {
+            font-size: $text-small;
+            font-family: $body-font;
+        }
+    }
+}
+
+h1 {
+    @include title;
+    font-size: $text-large;
+    font-family: $header-font;
+}
+
+p {
+    background-color: $primary-color; 
+    font-family: $body-font;
+    font-size: $text-small;
+    padding: 0.5em;
+}
+
+.btn {
+    @include blue-btn;
+    font-family: $body-font;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
